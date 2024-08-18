@@ -2,6 +2,7 @@ import React, {useRef} from 'react'
 import Card from './Card'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
+import mypicture from '../assets/picture.jpg'
 
 const Projects = () => {
 
@@ -28,8 +29,8 @@ const Projects = () => {
     };
 
     return (
-        <div id="projects" className='bg-gradient-to-r from-blue-300 to-blue-100'>
-            <h1 className="text-4xl font-bold text-center text-black ">Projects</h1>
+        <div id="projects" className='bg-gradient-to-r from-gray-800 to-gray-800' style={{ scrollMarginTop: '60px' }}>
+            <h1 className="text-4xl font-bold text-center text-black pt-10">Projects</h1>
             <Carousel
                 responsive={responsive}
                 swipeable={false}
@@ -42,9 +43,10 @@ const Projects = () => {
                 className="h-[650px]"
             >
                 <Card
-                    title={"Testing 1"}
-                    description={"Testing description"}
-                    link={"https://www.google.com"}
+                    title={"Personal Finance Tracker"}
+                    description={"Need a description for this"}
+                    link={"https://github.com/sagarikagupta/Finance-Tracker"}
+                    image={mypicture}
                 />
                 <Card
                     title={"Testing 2"}

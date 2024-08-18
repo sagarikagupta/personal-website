@@ -15,15 +15,15 @@ const Card = ({ title, description, image, link, alt }) => {
       x: e.clientX - rect.left,
       y: e.clientY - rect.top,
     });
-    setOpacity(0.2); // Reduced spotlight visibility
+    setOpacity(0.2); 
   };
 
   const handleMouseEnter = () => {
-    setOpacity(0.2); // Reduced spotlight visibility on mouse enter
+    setOpacity(0.2); 
   };
 
   const handleMouseLeave = () => {
-    setOpacity(0); // Hide spotlight on mouse leave
+    setOpacity(0); 
   };
 
   return (
@@ -35,13 +35,13 @@ const Card = ({ title, description, image, link, alt }) => {
       className="card w-96 bg-base-100 shadow-xl hover:shadow-2xl transform hover:scale-105 transition duration-300 m-auto"
       style={{
         position: 'relative',
-        overflow: 'hidden', // Ensure the spotlight effect does not overflow the card boundaries
+        overflow: 'hidden', 
       }}
     >
       <div
         className="pointer-events-none absolute inset-0"
         style={{
-          opacity, // Controlled by state for smooth transition
+          opacity, 
           background: `radial-gradient(circle at ${position.x}px ${position.y}px, rgba(255, 255, 255, 0.2), transparent 90%)`, // More subtle effect
           transition: 'opacity 0.3s ease',
         }}
@@ -54,7 +54,7 @@ const Card = ({ title, description, image, link, alt }) => {
         <p>{description}</p>
         <div className="card-actions justify-end">
           <a href={link} target="_blank" rel="noopener noreferrer">
-            <button className="btn btn-primary">View Project</button>
+            <button className="btn bg-[#EADFB2] text-black">View Project</button>
           </a>
         </div>
       </div>
