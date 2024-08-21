@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa"; // Icons for GitHub and L
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center text-center text-white bg-[#EADFB2] z-10">
+    <footer className="flex flex-col items-center text-center text-white bg-base-200 z-10">
       <div className="container pt-4">
         <div className="pb-4 flex justify-center">
           <a

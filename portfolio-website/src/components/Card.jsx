@@ -54,7 +54,7 @@ const Card = ({ title, description, image, link, alt }) => {
         <p>{description}</p>
         <div className="card-actions justify-end">
           <a href={link} target="_blank" rel="noopener noreferrer">
-            <button className="btn bg-[#EADFB2] text-black">View Project</button>
+            <button className="btn btn btn-neutral">View Project</button>
           </a>
         </div>
       </div>

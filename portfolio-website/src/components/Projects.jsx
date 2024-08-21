@@ -1,8 +1,9 @@
-import React, {useRef} from 'react'
+import React, { useRef } from 'react'
 import Card from './Card'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
-import mypicture from '../assets/picture.jpg'
+import mypicture from '../assets/image.png'
+import gamepicture from '../assets/block game.png'
 
 const Projects = () => {
 
@@ -29,7 +30,7 @@ const Projects = () => {
     };
 
     return (
-        <div id="projects" className='bg-gradient-to-r from-gray-800 to-gray-800' style={{ scrollMarginTop: '60px' }}>
+        <div id="projects" className='bg-[oklch(var(--b2))] z-10' style={{ scrollMarginTop: '60px' }}>
             <h1 className="text-4xl font-bold text-center text-black pt-10">Projects</h1>
             <Carousel
                 responsive={responsive}
@@ -44,18 +45,21 @@ const Projects = () => {
             >
                 <Card
                     title={"Personal Finance Tracker"}
-                    description={"Need a description for this"}
+                    description={"A finance tracker application that allows users to easily log, categorize, and visualize their income and expenses over time."}
                     link={"https://github.com/sagarikagupta/Finance-Tracker"}
                     image={mypicture}
                 />
                 <Card
-                    title={"Testing 2"}
+                    title={"Breakout Game"}
+                    description={"Testing description"}
+                    link={"https://www.youtube.com"}
+                    image={gamepicture}
+                />
+                <Card 
+                    title={"Testing 3"}
                     description={"Testing description"}
                     link={"https://www.youtube.com"}
                 />
-                <Card />
-                <Card />
-                <Card />
             </Carousel>
         </div>
     )

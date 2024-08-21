@@ -20,7 +20,7 @@ const LinkItem = ({ href, children }) => {
       target="_blank"
       rel="noopener noreferrer"
       className="inline-flex items-center text-lg transition-colors duration-300"
-      style={{ color: hover ? "#7480FF" : "white" }}
+      style={{ color: hover ? "oklch(var(--p))" : "black" }}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
@@ -61,14 +61,13 @@ const Main = () => {
 
   return (
     <>
-      <ReactParticles />
-      <div id='main' className='h-screen bg-gradient-to-r from-gray to-gray relative' style={{ color: "#000000" }}>
+      <div id='main' className='h-screen bg-secondary' style={{ color: "#000000" }}>
         <img className={`w-[500px] rounded-full absolute bottom-60 right-60 mb-0 mr-0 md:block hidden z-10 transition-opacity duration-1000 ${fadeInImage ? "opacity-100" : "opacity-0"
-          } text-white`} alt="picture will go here" />
+          } text-white`} src={mypicture} alt="picture will go here" />
         <div className='max-w-[700px] ml-[calc(50%-350px-100px)] h-[90vh] w-full flex flex-col justify-center lg:items-start items-center'>
-          <h1 className={`sm:text-6xl text-5xl font-bold text-[#E0E1DD] transition-opacity duration-1000 ${fadeInH1 ? "opacity-100" : "opacity-0"
-            }`}>Hi, I'm <span className='drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]' style={{ color: "#778DA9" }}>Sagarika</span></h1>
-          <h2 className={`flex sm:text-4xl text-3xl pt-4 text-[#E0E1DD] transition-opacity duration-1000 ${fadeInH2 ? "opacity-100" : "opacity-0"
+          <h1 className={`sm:text-6xl text-5xl font-bold text-[oklch(var(--a))] transition-opacity duration-1000 ${fadeInH1 ? "opacity-100" : "opacity-0"
+            }`}>Hi, I'm <span className='drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]' style={{ color: "oklch(var(--p))" }}>Sagarika</span></h1>
+          <h2 className={`flex sm:text-4xl text-3xl pt-4 text-[oklch(var(--a))] transition-opacity duration-1000 ${fadeInH2 ? "opacity-100" : "opacity-0"
             }`}>I'm a
             <TypeAnimation
               sequence={[
@@ -83,7 +82,7 @@ const Main = () => {
               ]}
               wrapper="span"
               speed={50}
-              style={{ fontSize: '1em', paddingLeft: '5px', display: 'inline-block', color: "#F5F5F5" }}
+              style={{ fontSize: '1em', paddingLeft: '5px', display: 'inline-block', color: "#272123" }}
               repeat={Infinity}
             />
 
@@ -102,16 +101,10 @@ const Main = () => {
           </div>
           <div className={`flex justify-between pt-6 max-w-[150px] w-full font-bold transition-opacity duration-1000 ${fadeInIcons ? "opacity-100" : "opacity-0"
             }`}>
-            <LinkItem href={Resume}>
-              Resume <RiFileUserLine className='cursor-pointer' size={30}/>
-            </LinkItem>
+            <button onClick={openResume} className="btn btn-neutral"><RiFileUserLine size={30}/>Resume</button>
           </div>
         </div>
       </div>
-      <Projects />
-      <About />
-      <Contact />
-      <Footer />
     </>
   )
 }

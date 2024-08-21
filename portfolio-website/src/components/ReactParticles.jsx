@@ -124,8 +124,8 @@ const ReactParticles = () => {
               enable: true,
               area: 800,
             },
-            limit: 20,
-            value: 15,
+            limit: 30,
+            value: 25,
           },
           opacity: {
             animation: {

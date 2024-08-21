@@ -14,8 +14,8 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="w-full h-full bg-gradient-to-r from-gray-800 to-gray-800 py-10" style={{ scrollMarginTop: '60px' }}>
-      <h1 className="text-center text-[#EADFB2] text-4xl font-bold tracking-wide mb-10">
+    <div id="contact" className="w-full h-full bg-base-100" style={{ scrollMarginTop: '60px' }}>
+      <h1 className="text-center text-[oklch(var(--n))] text-4xl font-bold tracking-wide mb-10 pt-10">
         Contact
       </h1>
 
@@ -28,7 +28,7 @@ const Contact = () => {
         >
           <input
             type="text"
-            className="p-3 bg-[#EADFB2] text-black border border-gray-600 rounded-full"
+            className="p-3 bg-base-100 text-black border border-gray-600 rounded-full"
             id="name"
             placeholder="Name"
             name="name"
@@ -36,21 +36,21 @@ const Contact = () => {
           />
           <input
             type="email"
-            className="p-3 bg-[#EADFB2] text-black border border-gray-600 rounded-full"
+            className="p-3 bg-base-100 text-black border border-gray-600 rounded-full"
             id="email"
             placeholder="Email"
             name="email"
             required
           />
           <textarea
-            className="p-3 bg-[#EADFB2] text-black border border-gray-600 rounded-3xl"
+            className="p-3 bg-base-100 text-black border border-gray-600 rounded-3xl"
             rows="10"
             placeholder="Message"
             name="message"
             required
           ></textarea>
           <button
-            className="bg-[#EADFB2] text-black p-3 rounded mt-4 hover:bg-blue-700 transition duration-200"
+            className="bg-base-100 text-black p-3 rounded mt-4 hover:bg-blue-700 transition duration-200"
             id="submit"
             type="submit"
           >
@@ -61,7 +61,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
-    </section>
+    </div>
   );
 };
 
