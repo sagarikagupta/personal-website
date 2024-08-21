@@ -61,7 +61,7 @@ const Main = () => {
 
   return (
     <>
-      <div id='main' className='h-screen bg-secondary' style={{ color: "#000000" }}>
+      <div id='main' className='h-screen bg-base-100' style={{ color: "#000000" }}>
         <img className={`w-[500px] rounded-full absolute bottom-60 right-60 mb-0 mr-0 md:block hidden z-10 transition-opacity duration-1000 ${fadeInImage ? "opacity-100" : "opacity-0"
           } text-white`} src={mypicture} alt="picture will go here" />
         <div className='max-w-[700px] ml-[calc(50%-350px-100px)] h-[90vh] w-full flex flex-col justify-center lg:items-start items-center'>
