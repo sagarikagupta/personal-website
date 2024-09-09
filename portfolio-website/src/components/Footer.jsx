@@ -13,7 +13,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="mr-9 text-neutral-800 dark:text-neutral-200"
           >
-            <MdEmail size={25} color="black"/>
+            <MdEmail size={25} color="white"/>
           </a>
           <a
             href="https://www.linkedin.com/in/sagarika-gupta/"
@@ -21,7 +21,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="mr-9 text-neutral-800 dark:text-neutral-200"
           >
-            <FaLinkedin size={25} color="black"/>
+            <FaLinkedin size={25} color="white"/>
           </a>
           <a
             href="https://github.com/sagarikagupta"
@@ -29,7 +29,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="text-neutral-800 dark:text-neutral-200"
           >
-            <FaGithub size={25} color="black" />
+            <FaGithub size={25} color="white" />
           </a>
         </div>
       </div>

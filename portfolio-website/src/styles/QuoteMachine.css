@@ -1,0 +1,30 @@
+.quote-container {
+    max-width: 400px;
+    max-height: 200px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .quote-text, .quote-author {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .quote-container.show {
+    opacity: 1;
+  }
+  
+  .quote-text.show, .quote-author.show {
+    opacity: 1;
+  }
+  

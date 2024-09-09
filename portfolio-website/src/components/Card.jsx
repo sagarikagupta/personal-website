@@ -32,7 +32,7 @@ const Card = ({ title, description, image, link, alt }) => {
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="card w-96 bg-base-100 shadow-xl hover:shadow-2xl transform hover:scale-105 transition duration-300 m-auto"
+      className="card w-96 bg-base-100 shadow-xl hover:shadow-2xl transform hover:scale-105 transition duration-300 m-auto rounded-none"
       style={{
         position: 'relative',
         overflow: 'hidden', 
@@ -50,11 +50,11 @@ const Card = ({ title, description, image, link, alt }) => {
         <img src={image} alt={alt} />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">{title}</h2>
+        <h2 className="card-title text-[oklch(var(--s))] text-2xl">{title}</h2>
         <p>{description}</p>
         <div className="card-actions justify-end">
           <a href={link} target="_blank" rel="noopener noreferrer">
-            <button className="btn btn btn-neutral">View Project</button>
+            <button className="btn btn-neutral hover:btn-secondary">View Project</button>
           </a>
         </div>
       </div>

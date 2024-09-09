@@ -15,8 +15,8 @@ const Contact = () => {
 
   return (
     <div id="contact" className="w-full h-full bg-base-100" style={{ scrollMarginTop: '60px' }}>
-      <h1 className="text-center text-[oklch(var(--n))] text-4xl font-bold tracking-wide mb-10 pt-10">
-        Contact
+      <h1 className="text-center text-white text-6xl font-bold tracking-wide mb-10 pt-10">
+        <span className='text-[oklch(var(--s))]'>Contact</span>
       </h1>
 
       <div className="flex flex-col md:flex-row justify-between max-w-4xl mx-auto p-5">
@@ -28,7 +28,7 @@ const Contact = () => {
         >
           <input
             type="text"
-            className="p-3 bg-base-100 text-black border border-gray-600 rounded-full"
+            className="p-3 bg-base-100 text-black border border-gray-600"
             id="name"
             placeholder="Name"
             name="name"
@@ -36,21 +36,21 @@ const Contact = () => {
           />
           <input
             type="email"
-            className="p-3 bg-base-100 text-black border border-gray-600 rounded-full"
+            className="p-3 bg-base-100 text-black border border-gray-600"
             id="email"
             placeholder="Email"
             name="email"
             required
           />
           <textarea
-            className="p-3 bg-base-100 text-black border border-gray-600 rounded-3xl"
+            className="p-3 bg-base-100 text-black border border-gray-600"
             rows="10"
             placeholder="Message"
             name="message"
             required
           ></textarea>
           <button
-            className="bg-base-100 text-black p-3 rounded mt-4 hover:bg-blue-700 transition duration-200"
+            className="bg-white text-black p-3 rounded mt-4 hover:bg-[oklch(var(--n))] hover:text-[oklch(var(--nc))] transition duration-200"
             id="submit"
             type="submit"
           >

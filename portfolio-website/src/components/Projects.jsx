@@ -4,6 +4,7 @@ import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 import mypicture from '../assets/image.png'
 import gamepicture from '../assets/block game.png'
+import facebookpic from '../assets/file.png'
 
 const Projects = () => {
 
@@ -31,7 +32,7 @@ const Projects = () => {
 
     return (
         <div id="projects" className='bg-[oklch(var(--b2))] z-10' style={{ scrollMarginTop: '60px' }}>
-            <h1 className="text-4xl font-bold text-center text-black pt-10">Projects</h1>
+            <h1 className="text-6xl font-bold text-center pt-10">My <span style={{ color: "oklch(var(--s))" }}>Projects</span></h1>
             <Carousel
                 responsive={responsive}
                 swipeable={false}
@@ -51,12 +52,12 @@ const Projects = () => {
                 />
                 <Card
                     title={"Breakout Game"}
-                    description={"Testing description"}
-                    link={"https://www.youtube.com"}
+                    description={"A paddle-and-ball game where the player controls a paddle to prevent the ball from falling while breaking blocks to progress through levels."}
+                    link={"https://github.com/sagarikagupta/brick-breaker-game"}
                     image={gamepicture}
                 />
                 <Card 
-                    title={"Testing 3"}
+                    title={"Text Based Facebook"}
                     description={"Testing description"}
                     link={"https://www.youtube.com"}
                 />
