@@ -9,6 +9,7 @@ import Footer from './Footer';
 import Resume from '../assets/sagarikaresume.pdf';
 import { RiFileUserLine } from 'react-icons/ri';
 
+
 // LinkItem Component to handle icon hover effects
 const LinkItem = ({ href, children }) => {
   const [hover, setHover] = useState(false);
@@ -111,11 +112,11 @@ const Main = () => {
             </button>
           </div>
           <div
-            className={`w-96 h-96 mx-auto mt-4 rounded-3xl overflow-hidden transition-opacity duration-1000 ${fadeInImage ? 'opacity-100' : 'opacity-0'}`}
+            className={`w-108 h-96 mx-auto mt-4 rounded-3xl overflow-hidden transition-opacity duration-1000 ${fadeInImage ? 'opacity-100' : 'opacity-0'}`}
           >
             <img
-              className="w-full h-full object-cover"
-              src="" // Replace with actual image path
+              className="w-full h-full object-cover rounded-full"
+              src={""} 
               alt="Your Profile"
             />
           </div>

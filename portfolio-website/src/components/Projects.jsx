@@ -4,7 +4,7 @@ import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 import mypicture from '../assets/image.png'
 import gamepicture from '../assets/block game.png'
-import facebookpic from '../assets/file.png'
+import P2Ppicture from '../assets/filesharingimage .png'
 
 const Projects = () => {
 
@@ -57,9 +57,10 @@ const Projects = () => {
                     image={gamepicture}
                 />
                 <Card 
-                    title={"Text Based Facebook"}
-                    description={"Testing description"}
-                    link={"https://www.youtube.com"}
+                    title={"Peer-to-Peer File Sharing System"}
+                    description={"A Peer-to-Peer file-sharing system in Python for decentralized file sharing in chunks for users over a network."}
+                    link={"https://github.com/sagarikagupta/Peer-to-peer-File-Sharing-System"}
+                    image={P2Ppicture}
                 />
             </Carousel>
         </div>
