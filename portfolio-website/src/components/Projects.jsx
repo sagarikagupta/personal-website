@@ -4,7 +4,7 @@ import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 import mypicture from '../assets/image.png'
 import gamepicture from '../assets/block game.png'
-import P2Ppicture from '../assets/filesharingimage .png'
+import P2Ppicture from '../assets/filesharingimage.png'
 
 const Projects = () => {
 
